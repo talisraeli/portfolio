@@ -1,0 +1,33 @@
+@import "../variables"
+
+.navigation-bar
+    height: 60px
+    border-bottom: 1px solid $off-white
+    width: 100%
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 1
+    background: transparentize($dark-blue, 0.5)
+    backdrop-filter: blur(1rem)
+
+    nav
+        height: 100%
+        display: flex
+        align-items: center
+
+        .section-links
+            margin: 0
+            padding: 0
+            flex-grow: 1
+            display: flex
+            justify-content: end
+            list-style: none
+            gap: 2rem
+            font-family: $font-header
+
+            a
+                color: $off-white
+
+                &:hover
+                    color: white

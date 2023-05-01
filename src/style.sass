@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Poppins:wght@400;500;700&family=Source+Serif+Pro:wght@400;700&display=swap')
+@import "./variables"
+
+body
+    margin: 0
+    background: $dark-blue
+    font-size: 16px
+    line-height: 2
+    font-family: $font-paragraph
+    color: $off-white
+    scroll-behavior: smooth
+    overflow-x: hidden
+
+h1, h2, h3
+    margin: 0
+
+h1
+    font-family: $font-hero
+    font-weight: normal
+    font-size: 4rem
+    line-height: normal
+
+    @function shadow($size)
+        @return drop-shadow($size $size 0px #7B2600)
+
+    @function color-shadow()
+        $result: #{""}
+        @for $i from 1 through 3
+            $result: $result + #{" "} + shadow(#{$i}px)
+        @return $result
+
+    > .colored-hero
+        display: block
+        background: linear-gradient(to bottom, #FDEA00 18.51%, #FDCF00 44.04%, #FC2700 83%)
+        -webkit-background-clip: text
+        background-clip: text
+        color: transparent
+        filter: color-shadow()
+
+h2, h3
+    color: white
+
+h2
+    font-family: $font-header
+    font-weight: bold
+    font-size: 3rem
+    text-transform: uppercase
+    letter-spacing: 0.25em
+
+h3
+    font-family: $font-paragraph
+    font-size: 2rem
+    font-weight: 500
+
+p
+    margin: 0
+
+a
+    font-weight: 500
+    color: white
+    text-decoration: none
+    font-weight: 500
+    position: relative
+    transition: color .3s ease-in-out
+
+    &::before
+        content: ""
+        position: absolute
+        width: 100%
+        height: 1px
+        border-radius: 1px
+        background-color: white
+        bottom: 0
+        left: 0
+        transform-origin: right
+        transform: scaleX(0)
+        transition: transform .3s ease-in-out
+
+    &:hover
+        color: white
+
+        &::before
+            transform-origin: left
+            transform: scaleX(1)
+
+@mixin wrapper-calculation($size)
+    $wrapper-padding: calc((100% - $size) / 2)
+    padding: 0 clamp(2.5vw, $wrapper-padding, $wrapper-padding)
+
+.wrapper
+    @include wrapper-calculation($size: $size-wrapper)
+
+    &-l
+        @include wrapper-calculation($size: $size-l)
+
+    &-m
+        @include wrapper-calculation($size: $size-m)
+
+    &-s
+        @include wrapper-calculation($size: $size-s)
+
+section
+    @include centered-flex
+    text-align: center

@@ -1,0 +1,42 @@
+@import "../../../../variables"
+
+.lets-work-together
+    gap: 0
+
+    .dashed-line
+        height: 400px
+        width: 2px
+        background: repeating-linear-gradient(to bottom, $off-white, $off-white 0.75rem, transparent 0.75rem, transparent 1.5rem)
+
+    .card-container
+        @include centered-flex
+        width: 100%
+        position: relative
+
+        img
+            position: absolute
+            height: 7.5rem
+            top: -3.25rem
+            left: 50%
+            transform: translateX(-50%)
+            border-radius: 50%
+            border: 2px solid white
+
+        .card
+            @include rounded-corners
+            @include centered-flex
+            gap: 1rem
+            background: white
+            padding-top: 6rem
+            padding-bottom: 4rem
+            position: relative
+            bottom: 8rem
+
+            h3, p
+                color: $dark-blue
+
+            p
+                padding-bottom: 1rem
+
+            button
+                filter: drop-shadow(0 0.1rem 0.15rem rgba(0, 0, 0, 0.2))

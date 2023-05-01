@@ -1,0 +1,21 @@
+@import "../../../variables"
+.scroll
+    @include small-text
+    user-select: none
+
+    span
+        position: relative
+        animation: 1s letter-jumping infinite alternate
+        color: darken($off-white, 50%)
+
+        @for $i from 1 through 6
+            &:nth-child(#{$i})
+                animation-delay: $i * 166ms * 2
+
+@keyframes letter-jumping
+    0%
+        bottom: 0
+        color: darken($off-white, 50%)
+    100%
+        bottom: 0.5em
+        color: $off-white

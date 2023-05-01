@@ -1,0 +1,35 @@
+// Theme colors
+$dark-blue: #0B0B0F !default
+$off-white: #C4C4D4 !default
+$purple: #4242D7 !default
+
+// Sizes
+$size-wrapper: 840px
+$size-l: 696px
+$size-m: 554px
+$size-s: 410px
+
+// Fonts
+$font-hero: "Lilita One", cursive
+$font-header: "Source Serif Pro", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+$font-paragraph: "Poppins", Helvetica, "Segoe UI", Arial, Tahoma, Geneva, Verdana, sans-serif
+
+@mixin small-text
+    font-family: $font-paragraph
+    font-weight: bold
+    font-size: 0.75rem
+    text-transform: uppercase
+    letter-spacing: 0.25em
+
+@mixin centered-flex
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 4rem
+
+@mixin rounded-corners
+    border-radius: 1rem
+
+@mixin dashed-border
+    @include rounded-corners
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='16' ry='16' stroke='%23C4C4D4' stroke-width='4' stroke-dasharray='8%2c 16' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e")

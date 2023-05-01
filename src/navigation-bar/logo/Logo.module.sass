@@ -1,0 +1,47 @@
+.logo
+    color: white
+    font-weight: bold
+    padding: 0.25em 0.7em
+    margin-left: -0.7em
+    letter-spacing: 0.05em
+
+    &:hover::before
+        display: none
+
+    span
+        user-select: none
+
+    .israe, .dot, .li
+        animation: 4s infinite alternate
+
+    .israe, .li
+        position: relative
+    
+    .israe
+        animation-name: move-israe
+    
+    .li
+        animation-name: move-li
+
+    .dot
+        animation-name: fade-dot
+
+@keyframes move-israe
+    0%, 50%
+        left: 0
+    75%, 100%
+        left: 1ch
+
+@keyframes move-li
+    0%, 50%
+        left: 0
+        padding-right: 0
+    75%, 100%
+        left: 0.6ch
+        padding-right: 0.6ch
+
+@keyframes fade-dot
+    0%, 25%
+        opacity: 1
+    50%, 100%
+        opacity: 0
