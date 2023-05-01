@@ -1,0 +1,27 @@
+@import "../../../../variables"
+
+.links
+    width: 100%
+    @include centered-flex
+    flex-direction: row
+    justify-content: space-between
+    gap: 0
+    padding: 3rem 0
+
+form, .column
+    @include centered-flex
+    align-items: stretch
+    gap: 1rem
+
+    .row
+        @include centered-flex
+        flex-direction: row
+
+    .column
+        padding-right: 1rem
+
+    .button-container
+        @include centered-flex
+        padding: 1.5rem 0
+
+        

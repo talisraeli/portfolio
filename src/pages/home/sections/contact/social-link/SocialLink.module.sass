@@ -1,0 +1,31 @@
+@import "../../../../../variables"
+
+.social-link
+    img
+        height: 2rem
+        filter: invert(88%) sepia(14%) saturate(185%) hue-rotate(201deg) brightness(88%) contrast(92%)
+        padding: 0.5rem
+
+    &:hover
+        img
+            filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(321deg) brightness(101%) contrast(105%)
+        &::before
+            display: none
+
+    &:nth-of-type(1) img
+        height: 2.6em
+
+    &:nth-of-type(2) img
+        height: 2.1em
+
+    &:nth-of-type(4) img
+        height: 3em
+
+    &:nth-of-type(5) img
+        height: 2.2em
+
+    &:nth-of-type(6) img
+        height: 3em
+
+    &:nth-of-type(7) img
+        height: 2.2em

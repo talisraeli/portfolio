@@ -1,0 +1,36 @@
+@import "../../../../../variables"
+
+.field
+    label
+        @include small-text
+        text-align: left
+        display: block
+        cursor: pointer
+        position: relative
+        left: 1rem
+        top: 2.7rem
+        transition: all .2s ease-in-out
+
+    input, textarea
+        display: block
+        width: 100%
+        appearance: none
+        padding: 1rem
+        font-size: 1rem
+        font-family: $font-paragraph
+        @include rounded-corners
+        outline: none
+        background: none
+        color: $off-white
+        border: 1px solid $off-white
+        transition: all .2s ease-in-out
+
+    &:has(input:focus), &:has(input:not(:placeholder-shown)), &:has(textarea:focus), &:has(textarea:not(:placeholder-shown))
+        label
+            top: 0
+
+    &:has(input:focus), &:has(textarea:focus)
+        label, input, textarea
+            color: white
+        input, textarea
+            border-color: white

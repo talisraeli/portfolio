@@ -4,6 +4,7 @@ import LetsWorkTogether from "./sections/lets-work-together/LetsWorkTogether";
 import FeaturedProjects from "./sections/featured-projects/FeaturedProjects";
 import Skills from "./sections/skills/Skills";
 import AboutMe from "./sections/about-me/AboutMe";
+import Contact from "./sections/contact/Contact";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <FeaturedProjects />
         <Skills />
         <AboutMe />
+        <Contact />
       </div>
     </>
   );
