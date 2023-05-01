@@ -1,6 +1,5 @@
 import { JSX } from "preact/jsx-runtime";
-import style from "./InputField.module.sass";
-import { useState } from "preact/hooks";
+import style from "./InputField.module.sass"; 
 
 interface InputFieldProps {
   type: "text" | "email" | "textarea";
@@ -12,15 +11,12 @@ interface InputFieldProps {
 }
 
 export default function InputField(props: InputFieldProps) {
-  const [value, setValue] = useState("");
 
   const onInputChange = (e: JSX.TargetedEvent<HTMLInputElement>) => {
-    setValue(e.currentTarget.value);
     props.onInputChange && props.onInputChange(e);
   };
 
   const onTextareaChange = (e: JSX.TargetedEvent<HTMLTextAreaElement>) => {
-    setValue(e.currentTarget.value);
     props.onTextareaChange && props.onTextareaChange(e);
   };
 
@@ -34,7 +30,6 @@ export default function InputField(props: InputFieldProps) {
           rows={6}
           placeholder=" "
           required
-          value={value}
           onChange={onTextareaChange}
           minLength={props.min}
         ></textarea>
@@ -45,7 +40,6 @@ export default function InputField(props: InputFieldProps) {
           id={props.nameInCode}
           placeholder=" "
           required
-          value={value}
           onChange={onInputChange}
           minLength={props.min}
         />

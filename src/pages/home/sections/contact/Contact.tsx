@@ -13,37 +13,55 @@ import twitterIcon from "./images/twitter.svg";
 import InputField from "./input-field/InputField";
 import Button from "../../../../components/button/Button";
 import { JSX } from "preact/jsx-runtime";
+import SentNotification from "./sent-notification/SentNotification";
 
 export default function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [content, setContent] = useState("");
+  const [sentSuccessfully, setSentSuccessfully] = useState(false);
+  const [pop, setPop] = useState<boolean>();
+
+  type DtoType = {
+    name: string;
+    email: string;
+    subject: string;
+    content: string;
+  };
+
+  const fetchMessage = async (dto: DtoType) => {
+    try {
+      let res = await fetch("https://api.talisrae.li/api/contact-me", {
+        method: "POST",
+        body: JSON.stringify(dto),
+      });
+      return res.ok;
+    } catch (error) {
+      console.error(error);
+    }
+    return false;
+  };
 
   const onSubmit = (e: JSX.TargetedEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (name && email && subject && content) {
-      const dto = {
+      resetPop();
+      fetchMessage({
         name: name,
         email: email,
         subject: subject,
         content: content,
-      };
-      try {
-        fetch("https://api.talisrae.li/api/contact-me", {
-          method: "POST",
-          body: JSON.stringify(dto),
-          mode: "no-cors",
-        }).then(async (res) => {
-          if (res.ok) {
-            console.log("The message sent successfully. " + (await res.text));
-          }
-        });
-        e.currentTarget.reset();
-      } catch (error) {
-        console.error(error);
-      }
+      }).then((res) => {
+        setSentSuccessfully(res);
+        setPop(true);
+      });
+      e.currentTarget.reset();
     }
+  };
+
+  const resetPop = () => {
+    setPop(undefined);
   };
 
   return (
@@ -137,6 +155,11 @@ export default function Contact() {
           </form>
         </div>
       </div>
+      <SentNotification
+        isSuccessed={sentSuccessfully}
+        pop={pop}
+        resetPop={resetPop}
+      />
     </section>
   );
 }

@@ -1,0 +1,18 @@
+@import "../../../../../variables"
+
+.container
+    position: fixed
+    bottom: 0
+    left: 0
+    width: 100dvw
+    background: transparentize($dark-blue, 0.5)
+    backdrop-filter: blur(1rem)
+    border-top: 1px solid $off-white
+    padding: 2rem 0
+    transition: all 1s
+
+    a
+        cursor: pointer
+
+    &.closed
+        bottom: -100%
