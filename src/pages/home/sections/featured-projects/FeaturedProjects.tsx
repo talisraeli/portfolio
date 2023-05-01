@@ -1,5 +1,6 @@
 import style from "./FeaturedProjects.module.sass";
 import ProjectCard from "./project-card/ProjectCard";
+import Button from "../../../../components/button/Button";
 
 import stawAvif from "./images/someone-to-argue-with/presentation.avif";
 import stawWebP from "./images/someone-to-argue-with/presentation.webp";
@@ -12,7 +13,8 @@ import seJpg from "./images/search-engine/presentation.jpg";
 import gjAvif from "./images/game-jams/presentation.avif";
 import gjWebP from "./images/game-jams/presentation.webp";
 import gjJpg from "./images/game-jams/presentation.jpg";
-import Button from "../../../../components/button/Button";
+
+import githubIcon from "./images/github.svg";
 
 export default function FeaturedProjects() {
   return (
@@ -84,7 +86,10 @@ export default function FeaturedProjects() {
         seconderyButtonLink="https://keshetbehanan.itch.io/"
       />
       <Button type="secondary" href="https://github.com/KeshetBehanan">
-        <>Explore more projects</>
+        <>
+          <img className="filter" src={githubIcon} alt="GitHub Icon" />
+          Explore more projects
+        </>
       </Button>
     </section>
   );

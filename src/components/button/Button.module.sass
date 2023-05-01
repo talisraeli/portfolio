@@ -23,22 +23,32 @@ button
         position: relative
         transition: all 0.2s ease-out
         left: 0
+        @include centered-flex
+        flex-direction: row
+        gap: 1rem
+        
+        *
+            max-height: 2rem
 
-    svg
+    .arrow
         position: absolute
         height: 0
         right: 6em
         opacity: 0
         transition: all 0.2s ease-in-out
 
-    &:hover, &:focus
+    :global(.filter)
+        filter: grayscale(1)
+        transition: all 0.2s ease-in-out
+
+    &:hover
         box-shadow: inset 25rem 0 0 0 white
         padding: 1.25em 3.25em
 
         span
             left: -0.75em
 
-        svg
+        .arrow
             height: 1.5em
             opacity: 1
             right: 2.5rem
@@ -59,10 +69,10 @@ button
             border-radius: 50%
             z-index: -1
 
-        .arrow
-            fill: $dark-blue
+        :global(.filter)
+            filter: invert(3%) sepia(4%) saturate(5623%) hue-rotate(201deg) brightness(94%) contrast(96%) grayscale(1)
 
-        &:hover, &:focus
+        &:hover
             color: $dark-blue
 
             &::before
@@ -74,10 +84,10 @@ button
         background: white
         color: $dark-blue
 
-        .arrow
-            fill: white
+        :global(.filter)
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(41deg) brightness(104%) contrast(101%) grayscale(1)
 
-        &:hover, &:focus
+        &:hover
             box-shadow: inset 25rem 0 0 0 $purple
             color: white
 
@@ -85,12 +95,15 @@ button
         color: white
         border: 1px solid white
 
-        .arrow
-            fill: $dark-blue
+        :global(.filter)
+            filter: invert(100%) sepia(30%) saturate(0%) hue-rotate(78deg) brightness(104%) contrast(101%) grayscale(1)
 
-        &:hover, &:focus
+        &:hover
             box-shadow: inset 25rem 0 0 0 white
             color: $dark-blue
+
+            :global(.filter)
+                filter: invert(4%) sepia(7%) saturate(1861%) hue-rotate(201deg) brightness(89%) contrast(98%) grayscale(1)
         
 @keyframes jumping
     0%, 80%, 90%, 100%
