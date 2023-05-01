@@ -3,6 +3,7 @@ import Hero from "./sections/hero/Hero";
 import LetsWorkTogether from "./sections/lets-work-together/LetsWorkTogether";
 import FeaturedProjects from "./sections/featured-projects/FeaturedProjects";
 import Skills from "./sections/skills/Skills";
+import AboutMe from "./sections/about-me/AboutMe";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <LetsWorkTogether />
         <FeaturedProjects />
         <Skills />
+        <AboutMe />
       </div>
     </>
   );

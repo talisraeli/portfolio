@@ -1,0 +1,103 @@
+import style from "./AboutMe.module.sass";
+
+import locationIcon from "./images/location.svg";
+import languageIcon from "./images/language.svg";
+import carIcon from "./images/car.svg";
+import Button from "../../../../components/button/Button";
+
+import meAvif from "./images/me/me.avif";
+import meWebP from "./images/me/me.webp";
+import meJpg from "./images/me/me.jpg";
+
+export default function AboutMe() {
+  return (
+    <section id="about-me" className={style.aboutMe}>
+      <h2>About Me</h2>
+      <div className={style.grid}>
+        <article>
+          <div className={style.line}></div>
+          <div className={style.story}>
+            <p>
+              Since childhood I've been in love with computers and been playing
+              video games. I wanted to create my own video games, so I
+              self-taught programing and game design with{" "}
+              <a
+                href="https://unity.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Unity
+              </a>{" "}
+              game engine via{" "}
+              <a
+                href="https://www.youtube.com/watch?v=g5QFW12utdU&list=PLPV2KyIb3jR4u6zeBY77WPj0KuFdmv84g"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                YouTube
+              </a>{" "}
+              tutorials and documentations. Then, I participated in game jams
+              and collaborating with people all over the world.
+            </p>
+            <p>
+              Programing attracted me surpassingly, and I was expanding my
+              knowledge by self-teaching software, database, network and web
+              development. When I got into high-school, I joined computer
+              science and physics classes. Additionally, I joined a software
+              development program for teenagers at{" "}
+              <a href="https://www.weizmann.ac.il/pages/" target="_blank" rel="noopener noreferrer">
+                Weizmann Institute of Science
+              </a>
+              . I ended high-school with a 100 grade in computer science and
+              software engineering.
+            </p>
+            <p>
+              I was serving in the Combat Intelligence Corps in the IDF as a
+              combat intelligence soldier with a specialization in drone
+              operation. I was participating in the "Guardian of the Walls" and
+              "Breaking Dawn" operations. In the last period of my military
+              service, I was accepted to the "Shchakim - AAM" course in Unit
+              8200, but I decided to quit the program.
+            </p>
+            <p>
+              Among other things, I love to shoot portraits and street
+              photography, watching movies, and going to restaurants.
+            </p>
+          </div>
+        </article>
+        <aside>
+          <picture>
+            <source srcset={meAvif} type="image/avif" />
+            <source srcset={meWebP} type="image/webp" />
+            <img
+              src={meJpg}
+              type="image/jpeg"
+              decoding="async"
+              loading="lazy"
+              alt="A photo of Tal Israeli"
+            />
+          </picture>
+          <h3>Tal Israeli</h3>
+          <p className={style.smallText}>Full-stack Developer</p>
+          <div className={style.info}>
+            <p>
+              <img src={locationIcon} alt="Location Icon" />
+              <span>Giv'at Brenner, Israel</span>
+            </p>
+            <p>
+              <img src={languageIcon} alt="Language Icon" />
+              <span>Hebrew (native), English (full)</span>
+            </p>
+            <p>
+              <img src={carIcon} alt="Car Icon" />
+              <span>Remote or hybrid work</span>
+            </p>
+          </div>
+          <Button type="secondary" jumping>
+            <>Download resume</>
+          </Button>
+        </aside>
+      </div>
+    </section>
+  );
+}

@@ -66,8 +66,8 @@ export default function FeaturedProjects() {
       />
       <ProjectCard
         title="Game Jams"
-        description="Explore video games I created during “Ludum Dare” game jams in the Unity game engine
-        along cooperative development teams around the world."
+        description='Explore video games I created during "Ludum Dare" game jams in the Unity game engine
+        along cooperative development teams around the world.'
         seconderyButtonName="Play my games"
         image={
           <picture>
