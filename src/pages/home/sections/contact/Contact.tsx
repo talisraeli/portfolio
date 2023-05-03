@@ -23,18 +23,21 @@ export default function Contact() {
   const [sentSuccessfully, setSentSuccessfully] = useState(false);
   const [pop, setPop] = useState<boolean>();
 
-  type DtoType = {
-    name: string;
-    email: string;
-    subject: string;
-    content: string;
-  };
-
-  const fetchMessage = async (dto: DtoType) => {
+  const fetchMessage = async (
+    name: string,
+    email: string,
+    subject: string,
+    content: string
+  ) => {
     try {
       let res = await fetch("https://api.talisrae.li/api/contact-me", {
         method: "POST",
-        body: JSON.stringify(dto),
+        body: JSON.stringify({
+          name: name,
+          email: email,
+          subject: subject,
+          content: content,
+        }),
       });
       return res.ok;
     } catch (error) {
@@ -47,12 +50,7 @@ export default function Contact() {
     e.preventDefault();
     if (name && email && subject && content) {
       resetPop();
-      fetchMessage({
-        name: name,
-        email: email,
-        subject: subject,
-        content: content,
-      }).then((res) => {
+      fetchMessage(name, email, subject, content).then((res) => {
         setSentSuccessfully(res);
         setPop(true);
       });
