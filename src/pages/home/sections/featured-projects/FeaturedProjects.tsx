@@ -62,7 +62,7 @@ export default function FeaturedProjects() {
           </picture>
         }
         primaryButtonLink="/search-engine"
-        seconderyButtonLink="https://search.talisrae.li"
+        seconderyButtonLink="https://talsearchengine.azurewebsites.net/"
       />
       <ProjectCard
         title="Game Jams"
