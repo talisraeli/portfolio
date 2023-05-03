@@ -28,7 +28,7 @@ export default function LetsWorkTogether() {
             I’m looking for a new adventure in a company which helps people make
             their life better and easier.
           </p>
-          <Button type="primary" jumping>
+          <Button type="primary" jumping href="#contact" sameWindow>
             <>Make it happen</>
           </Button>
         </div>

@@ -7,6 +7,7 @@ interface ButtonProps {
   type: "hero" | "primary" | "secondary";
   jumping?: boolean;
   href?: string;
+  sameWindow?: boolean;
 }
 
 export default function Button(props: ButtonProps) {
@@ -22,7 +23,7 @@ export default function Button(props: ButtonProps) {
   const onClick = (e: JSX.TargetedMouseEvent<HTMLButtonElement>) => {
     if (props.href) {
       e.preventDefault();
-      window.open(props.href, "_blank");
+      window.open(props.href, props.sameWindow ? "_self" : "_blank");
     }
   };
 

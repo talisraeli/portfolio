@@ -15,7 +15,7 @@ export default function Hero() {
           new modern technologies and eager to apply my skills to real-world
           challenges to drive your business success.
         </p>
-        <Button type="hero" jumping>
+        <Button type="hero" jumping href="#featured-projects" sameWindow>
           <>Explore my recent work</>
         </Button>
       </div>
