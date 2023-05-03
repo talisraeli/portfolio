@@ -12,11 +12,11 @@ const Main = () => (
   <>
     <GrainFilter />
     <NavigationBar />
-    <div className="wrapper">
+    <main className="wrapper">
       <Router>
         <Home path="/" />
       </Router>
-    </div>
+    </main>
     <Footer />
   </>
 );
