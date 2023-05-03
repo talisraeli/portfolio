@@ -11,10 +11,6 @@ export default function SentNotification(props: SentNotificationProps) {
   const [isOpened, setIsOpened] = useState(false);
 
   useEffect(() => {
-    console.log(props.isSuccessed);
-  }, [props.isSuccessed]);
-
-  useEffect(() => {
     if (props.pop && props.resetPop) {
       setIsOpened(true);
       props.resetPop();
