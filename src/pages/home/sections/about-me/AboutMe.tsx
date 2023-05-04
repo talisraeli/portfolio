@@ -86,7 +86,7 @@ export default function AboutMe() {
             </p>
             <p>
               <img src={languageIcon} alt="Language Icon" />
-              <span>Hebrew (native), English (full)</span>
+              <span>Hebrew, English</span>
             </p>
             <p>
               <img src={carIcon} alt="Car Icon" />
