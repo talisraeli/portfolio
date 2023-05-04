@@ -72,14 +72,14 @@ export default function FeaturedArticles() {
             <>
               <p>
                 The networks have gone crazy when they found out about the
-                existence of “Someone to Argue With”, an application in which
+                existence of "Someone to Argue With", an application in which
                 conflict is sought directly.
               </p>
               <p>
                 Now, thanks to an application that is starting to become
                 fashionable, you can find a partner to do what you usually try
                 to avoid (sometimes without success) in love: argue. An Israeli
-                company has created an app called “Someone to Argue With” in
+                company has created an app called "Someone to Argue With" in
                 which users can search for opponents with whom to confront their
                 arguments.
               </p>

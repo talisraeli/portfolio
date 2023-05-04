@@ -26,6 +26,7 @@ export default function NavigationBar() {
               </li>
             </ul>
           </Fragment>
+
           <Fragment path="/someone-to-argue-with">
             <BackToHomePage />
             <ul className={style.sectionLinks}>
@@ -43,6 +44,22 @@ export default function NavigationBar() {
               </li>
             </ul>
           </Fragment>
+
+          <Fragment path="/search-engine">
+            <BackToHomePage />
+            <ul className={style.sectionLinks}>
+              <li>
+                <a href="#background">Background</a>
+              </li>
+              <li>
+                <a href="#project-design">Project Design</a>
+              </li>
+              <li>
+                <a href="#development">Development</a>
+              </li>
+            </ul>
+          </Fragment>
+
           <Logo default />
         </Router>
       </nav>
