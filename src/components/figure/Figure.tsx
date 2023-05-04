@@ -12,7 +12,7 @@ export default function Figure(props: FigureProps) {
     <div className="wrapper-m">
       <figure
         className={`${style.figure}${
-          props.noRoundedCorners ? style.noRoundedCorners : ""
+          props.noRoundedCorners ? ` ${style.noRoundedCorners}` : ""
         }`}
       >
         {props.children}
