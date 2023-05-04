@@ -1,6 +1,6 @@
 import { useEffect } from "preact/hooks";
 import style from "./SomeoneToArgueWith.module.sass";
-import Hero from "./hero/Hero";
+import Hero from "./sections/hero/Hero";
 
 export default function SomeoneToArgueWith() {
   useEffect(() => {
@@ -10,9 +10,8 @@ export default function SomeoneToArgueWith() {
   }, []);
 
   return (
-    <>
+    <div className={style.SomeoneToArgueWith}>
       <Hero />
-      <div className={style.sections}></div>
-    </>
+    </div>
   );
 }

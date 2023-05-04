@@ -1,5 +1,5 @@
-import Button from "../../../components/button/Button";
-import Figure from "../../../components/figure/Figure";
+import Button from "../../../../components/button/Button";
+import Figure from "../../../../components/figure/Figure";
 import style from "./Hero.module.sass";
 
 import avif from "./images/presentation.avif";
