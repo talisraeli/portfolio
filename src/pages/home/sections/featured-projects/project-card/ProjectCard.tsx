@@ -20,7 +20,7 @@ export default function ProjectCard(props: ProjectCardProps) {
             <h3>{props.title}</h3>
             <p>{props.description}</p>
             <div className={style.buttons}>
-                <Button type="primary" href={props.primaryButtonLink} jumping><>Read more</></Button>
+                <Button type="primary" href={props.primaryButtonLink} jumping sameWindow><>Read more</></Button>
                 <Button type="secondary" href={props.seconderyButtonLink}><>{props.seconderyButtonName}</></Button>
             </div>
           </div>
