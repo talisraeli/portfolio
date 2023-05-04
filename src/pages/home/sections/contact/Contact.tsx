@@ -147,7 +147,7 @@ export default function Contact() {
             </div>
             <div className={style.buttonContainer}>
               <Button type="secondary">
-                <>Submit messgae</>
+                <>Submit message</>
               </Button>
             </div>
           </form>
