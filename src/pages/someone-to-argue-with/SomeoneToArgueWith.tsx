@@ -5,6 +5,7 @@ import Background from "./sections/background/Background";
 import Rebranding from "./sections/rebranding/Rebranding";
 import Development from "./sections/development/Development";
 import FeaturedArticles from "./sections/featured-articles/FeaturedArticles";
+import Button from "../../components/button/Button";
 
 export default function SomeoneToArgueWith() {
   useEffect(() => {
@@ -20,6 +21,10 @@ export default function SomeoneToArgueWith() {
       <Rebranding />
       <Development />
       <FeaturedArticles />
+      <section className={style.buttons}>
+        <Button type="primary" href="/" sameWindow><>Back to home page</></Button>
+        <Button type="secondary" href="https://mishu.im"><>Visit website</></Button>
+      </section>
     </div>
   );
 }
