@@ -1,0 +1,13 @@
+@import "../../variables"
+
+.figure
+    margin: 0
+    
+    img
+        @include rounded-corners
+
+    figcaption
+        @include small-text
+    
+    &.no-rounded-corners img
+        border-radius: 0
