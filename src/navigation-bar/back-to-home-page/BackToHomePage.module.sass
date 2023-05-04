@@ -1,0 +1,28 @@
+@import "../../variables"
+
+.link
+    @include centered-flex
+    flex-direction: row
+    gap: 0.5rem
+    margin-left: -0.7em
+    padding: 0.25em 0.7em
+    cursor: pointer
+
+    &:hover
+        .arrow
+            fill: white
+        a
+            color: white
+
+            &::before
+                display: none
+
+    svg
+        height: 1.25rem
+
+        .arrow
+            fill: $off-white
+            transition: fill 0.3s ease-in-out
+
+    a
+        color: $off-white
