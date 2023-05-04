@@ -1,0 +1,38 @@
+@import "../../../../../variables"
+
+.card
+    position: relative
+    @include dashed-border
+    padding: 3rem 0
+
+    .content
+        @include centered-flex
+        align-items: flex-end
+        text-align: left
+        gap: 2rem
+
+        a
+            padding: 1rem
+            margin: -1rem
+
+            &::before
+                display: none
+
+        img
+            height: 2rem
+
+    &::before, &::after
+        position: absolute
+        font-size: 10rem
+        font-family: $font-header
+        font-weight: bold
+
+    &::before
+        content: "“"
+        left: -2rem
+        top: -7rem
+
+    &::after
+        content: "”"
+        right: -2rem
+        bottom: -13rem

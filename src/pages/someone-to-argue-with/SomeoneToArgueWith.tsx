@@ -4,6 +4,7 @@ import Hero from "./sections/hero/Hero";
 import Background from "./sections/background/Background";
 import Rebranding from "./sections/rebranding/Rebranding";
 import Development from "./sections/development/Development";
+import FeaturedArticles from "./sections/featured-articles/FeaturedArticles";
 
 export default function SomeoneToArgueWith() {
   useEffect(() => {
@@ -18,6 +19,7 @@ export default function SomeoneToArgueWith() {
       <Background />
       <Rebranding />
       <Development />
+      <FeaturedArticles />
     </div>
   );
 }
