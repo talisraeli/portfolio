@@ -16,7 +16,7 @@ export default function AboutMe() {
       <div className={style.grid}>
         <article>
           <div className={style.line}></div>
-          <div className={style.story}>
+          <div className="text-section">
             <p>
               Since childhood I've been in love with computers and been playing
               video games. I wanted to create my own video games, so I
