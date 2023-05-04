@@ -3,6 +3,7 @@ import style from "./SomeoneToArgueWith.module.sass";
 import Hero from "./sections/hero/Hero";
 import Background from "./sections/background/Background";
 import Rebranding from "./sections/rebranding/Rebranding";
+import Development from "./sections/development/Development";
 
 export default function SomeoneToArgueWith() {
   useEffect(() => {
@@ -16,6 +17,7 @@ export default function SomeoneToArgueWith() {
       <Hero />
       <Background />
       <Rebranding />
+      <Development />
     </div>
   );
 }
