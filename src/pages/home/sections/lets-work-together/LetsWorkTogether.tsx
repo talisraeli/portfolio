@@ -1,4 +1,4 @@
-import ScrollText from "../../scroll-text/ScrollText";
+import ScrollText from "./scroll-text/ScrollText";
 import style from "./LetsWorkTogether.module.sass";
 import avatarAvif from "./images/avatar.avif";
 import avatarWebP from "./images/avatar.webp";
