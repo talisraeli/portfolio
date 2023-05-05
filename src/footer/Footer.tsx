@@ -8,7 +8,7 @@ export default function Footer() {
         <p>
           The source code of this website is available on{" "}
           <a
-            href="https://github.com/talisraeli/talisraeli.github.io"
+            href="https://github.com/talisraeli/Portfolio"
             target="_blank"
             rel="noopener noreferrer"
           >
