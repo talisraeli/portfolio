@@ -60,6 +60,21 @@ export default function NavigationBar() {
             </ul>
           </Fragment>
 
+          <Fragment path="/game-jams">
+            <BackToHomePage />
+            <ul className={style.sectionLinks}>
+              <li>
+                <a href="#who-z-for-dinner">Who Z For Dinner</a>
+              </li>
+              <li>
+                <a href="#tower-deck-furenzy">Tower Deck Furenzy</a>
+              </li>
+              <li>
+                <a href="#adblock-doesnt-work">AdBlock Doesn't Work!</a>
+              </li>
+            </ul>
+          </Fragment>
+
           <Logo default />
         </Router>
       </nav>

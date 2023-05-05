@@ -1,0 +1,21 @@
+@import "../../variables"
+
+.sections
+    @include centered-flex
+    gap: 0
+
+    section
+        padding: 6rem 0
+
+        header
+            line-height: 1.5
+            
+            p
+                @include small-text
+
+
+    .buttons
+        @include centered-flex
+        flex-direction: row
+        gap: 2rem
+        padding-bottom: 12rem
