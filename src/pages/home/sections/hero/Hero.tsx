@@ -11,7 +11,7 @@ export default function Hero() {
         </h1>
         <p>
           I build and design beautiful software and web applications your
-          clients will love. I’m highly motivated with a strong passion to learn
+          clients will love. I'm highly motivated with a strong passion to learn
           new modern technologies and eager to apply my skills to real-world
           challenges to drive your business success.
         </p>

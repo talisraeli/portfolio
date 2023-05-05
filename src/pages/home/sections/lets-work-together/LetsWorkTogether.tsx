@@ -25,7 +25,7 @@ export default function LetsWorkTogether() {
           </picture>
           <h3>Let's work together</h3>
           <p>
-            I’m looking for a new adventure in a company which helps people make
+            I'm looking for a new adventure in a company which helps people make
             their life better and easier.
           </p>
           <Button type="primary" jumping href="#contact" sameWindow>
