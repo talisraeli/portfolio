@@ -17,7 +17,7 @@ export default function AboutMe() {
         <article>
           <div className={style.line}></div>
           <div className="text-section">
-            <p>
+            <p data-aos="fade-in">
               Since childhood I've been in love with computers and been playing
               video games. I wanted to create my own video games, so I
               self-taught programing and game design with{" "}
@@ -39,7 +39,7 @@ export default function AboutMe() {
               tutorials and documentations. Then, I participated in game jams
               and collaborating with people all over the world.
             </p>
-            <p>
+            <p data-aos="fade-in">
               Programing attracted me surpassingly, and I was expanding my
               knowledge by self-teaching software, database, network and web
               development. When I got into high-school, I joined computer
@@ -55,7 +55,7 @@ export default function AboutMe() {
               . I ended high-school with a 100 grade in computer science and
               software engineering.
             </p>
-            <p>
+            <p data-aos="fade-in">
               I was serving in the Combat Intelligence Corps in the IDF as a
               combat intelligence soldier with a specialization in drone
               operation. I was participating in the "Guardian of the Walls" and
@@ -63,7 +63,7 @@ export default function AboutMe() {
               service, I was accepted to the "Shchakim - AAM" course in Unit
               8200, but I decided to quit the program.
             </p>
-            <p>
+            <p data-aos="fade-in">
               Among other things, I love to shoot portraits and street
               photography, watch movies, play video games, and go to
               restaurants.
