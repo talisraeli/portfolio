@@ -15,7 +15,7 @@ export default function WhoZForDinner() {
           <h2>Who Z For Dinner</h2>
         </header>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             The theme of{" "}
             <a
               href="https://ldjam.com/events/ludum-dare/42"
@@ -44,7 +44,7 @@ export default function WhoZForDinner() {
             , they both were responsible for the art of the game, and I was for
             the programming.
           </p>
-          <p>
+          <p data-aos="fade-in">
             The idea for our game was a survival game against zombies on a
             limited platform made of tiles. Each time a zombie touches you, a
             tile falls. The one and only rule of the game is to stay alive on
@@ -53,7 +53,7 @@ export default function WhoZForDinner() {
             added to the global leaderboard with your name so everyone can see
             your achievement!
           </p>
-          <p>
+          <p data-aos="fade-in">
             I made this game using{" "}
             <a
               href="https://unity.com/"

@@ -15,7 +15,7 @@ export default function TowerDeckFurenzy() {
       </header>
       <div className={`wrapper-l ${style.content}`}>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             Tower Deck Furenzy is a game which has been developed by three
             programmers (
             <a
@@ -69,13 +69,13 @@ export default function TowerDeckFurenzy() {
             of this game jam was "Combine 2 Incompatible Genres". We combined
             the two unique themes into one game: tower defense and a card game.
           </p>
-          <p>
+          <p data-aos="fade-in">
             In this game you need to use your cards from your hand which are
             given to you at the beginning of each wave, to place towers (in the
             form of animals), upgrade them, and defeat the angry animals trying
             to hurt you (like a tiger).
           </p>
-          <p>
+          <p data-aos="fade-in">
             I enjoyed making this game and learned a lot about cooperative
             development with multiple programmers and designers. The whole
             creation of this game we were communicating through Discord, and

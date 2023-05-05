@@ -15,7 +15,7 @@ export default function AdBlockDoesntWork() {
       </header>
       <div className={`wrapper-l ${style.content}`}>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             This was my first time participating in Ludum Dare game jam. The
             theme for{" "}
             <a
@@ -31,7 +31,7 @@ export default function AdBlockDoesntWork() {
             implemented this idea into the game, and made the player close the
             ads to earn score until the video ends.
           </p>
-          <p>
+          <p data-aos="fade-in">
             I developed all the game alone, besides some help of{" "}
             <a
               href="https://ofek.myportfolio.com/"
