@@ -14,7 +14,10 @@ interface ProjectCardProps {
 
 export default function ProjectCard(props: ProjectCardProps) {
   return (
-    <div className={style.projectCard} data-aos={props.fadeLeft ? "fade-left" : "fade-right"}>
+    <div
+      className={style.projectCard}
+      data-aos={props.fadeLeft ? "fade-left" : "fade-right"}
+    >
       <div className={`wrapper-l ${style.grid}`}>
         <div className={style.image}>{props.image}</div>
         <div className={style.content}>

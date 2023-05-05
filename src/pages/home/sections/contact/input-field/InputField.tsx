@@ -1,5 +1,5 @@
 import { JSX } from "preact/jsx-runtime";
-import style from "./InputField.module.sass"; 
+import style from "./InputField.module.sass";
 
 interface InputFieldProps {
   type: "text" | "email" | "textarea";
@@ -11,7 +11,6 @@ interface InputFieldProps {
 }
 
 export default function InputField(props: InputFieldProps) {
-
   const onInputChange = (e: JSX.TargetedEvent<HTMLInputElement>) => {
     props.onInputChange && props.onInputChange(e);
   };

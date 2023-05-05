@@ -51,7 +51,10 @@ export default function Hero() {
           <Button type="primary" href="#background" sameWindow>
             <>Read more</>
           </Button>
-          <Button type="secondary" href="https://talsearchengine.azurewebsites.net/">
+          <Button
+            type="secondary"
+            href="https://talsearchengine.azurewebsites.net/"
+          >
             <>Live demo</>
           </Button>
         </div>
