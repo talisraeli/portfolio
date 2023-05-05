@@ -11,7 +11,7 @@ export default function ProjectDesign() {
       <div className={`wrapper-l ${style.content}`}>
         <h2>Project Design</h2>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             All search engines are divided into three small systems: the first
             of which is the collection of data from webpages using bots called{" "}
             <a
@@ -28,7 +28,7 @@ export default function ProjectDesign() {
             system has a connection to the other systems, which allows
             cooperation between them. My search engine also uses this structure.
           </p>
-          <p>
+          <p data-aos="fade-in">
             The process of building the database begins with the scanning of a
             webpage by a web crawler, from which it extracts information about
             the website (such as title and description), and gives a score to
@@ -44,7 +44,7 @@ export default function ProjectDesign() {
             system developer get priority in their content volume in the
             database and get a higher crawl frequency than other sites.
           </p>
-          <p>
+          <p data-aos="fade-in">
             When the client enters a query and clicks "Search", it sends{" "}
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods"

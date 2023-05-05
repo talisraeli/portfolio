@@ -11,7 +11,7 @@ export default function Development() {
       <div className={`wrapper-l ${style.content}`}>
         <h2>Development</h2>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             I chose the technologies of development in this project based on my
             desire to learn them. I really wanted to deep my knowledge of{" "}
             <a href="http://dot.net/" target="_blank" rel="noopener noreferrer">
@@ -79,7 +79,7 @@ export default function Development() {
             </a>
             .
           </p>
-          <p>
+          <p data-aos="fade-in">
             For the deployment, I used{" "}
             <a
               href="https://aws.amazon.com/"

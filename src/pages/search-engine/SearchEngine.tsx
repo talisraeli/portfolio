@@ -19,7 +19,7 @@ export default function SearchEngine() {
       <Background />
       <ProjectDesign />
       <Development />
-      <section className={style.buttons}>
+      <section className={style.buttons} data-aos="zoom-in">
         <Button type="primary" href="/" sameWindow>
           <>Back to home page</>
         </Button>

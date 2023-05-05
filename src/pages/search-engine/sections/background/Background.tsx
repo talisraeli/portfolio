@@ -11,7 +11,7 @@ export default function Background() {
       <div className={`wrapper-l ${style.content}`}>
         <h2>Background</h2>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             Inspired by{" "}
             <a
               href="https://www.google.com/"
@@ -30,7 +30,7 @@ export default function Background() {
             wanted to build a large system in dimensions that I hadn't built
             before.
           </p>
-          <p>
+          <p data-aos="fade-in">
             At the beginning of the project, I started researching with the help
             of the Internet and books about all kinds of project-related topics.
             I researched how search engines work, what types of search engines
@@ -56,7 +56,7 @@ export default function Background() {
             </a>
             , Cambridge University Press. 2008".
           </p>
-          <p>
+          <p data-aos="fade-in">
             According to the research I conducted, I understood that today's
             search engines are very complicated and developed at a super high
             level, they have dozens of different technologies that allow them to
