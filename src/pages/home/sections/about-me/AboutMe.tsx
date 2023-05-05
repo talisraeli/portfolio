@@ -45,7 +45,11 @@ export default function AboutMe() {
               development. When I got into high-school, I joined computer
               science and physics classes. Additionally, I joined a software
               development program for teenagers at{" "}
-              <a href="https://www.weizmann.ac.il/pages/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.weizmann.ac.il/pages/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Weizmann Institute of Science
               </a>
               . I ended high-school with a 100 grade in computer science and
@@ -61,7 +65,8 @@ export default function AboutMe() {
             </p>
             <p>
               Among other things, I love to shoot portraits and street
-              photography, watching movies, and going to restaurants.
+              photography, watch movies, play video games, and go to
+              restaurants.
             </p>
           </div>
         </article>
