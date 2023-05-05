@@ -8,7 +8,7 @@ interface SkillListProps {
 
 export default function SkillList(props: SkillListProps) {
   return (
-    <div className={style.list}>
+    <div className={style.list} data-aos="fade-up">
       <h4>{props.title}</h4>
       <div className={style.line}></div>
       <ul>
