@@ -98,9 +98,23 @@ export default function AboutMe() {
               <span>Remote or hybrid work</span>
             </p>
           </div>
-          <Button type="secondary" jumping>
-            <>Download resume</>
-          </Button>
+          <div className={style.resumeBtn}>
+            <Button type="secondary" href="/Tal_Israeli_Resume.docx" jumping>
+              <>Download resume</>
+            </Button>
+            <small>
+              The resume is DOCX file,{" "}
+              <a
+                href="/Tal_Israeli_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                download
+              >
+                Download PDF
+              </a>
+              .
+            </small>
+          </div>
         </aside>
       </div>
     </section>
