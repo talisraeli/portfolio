@@ -48,6 +48,7 @@ export default function FeaturedProjects() {
         defines what you are searching for and receive the
         most relevant webpage results across the internet."
         seconderyButtonName="Live demo"
+        fadeLeft
         image={
           <picture>
             <source srcSet={seAvif} type="image/avif" />
@@ -85,12 +86,14 @@ export default function FeaturedProjects() {
         primaryButtonLink="/game-jams"
         seconderyButtonLink="https://talisraeli.itch.io/"
       />
-      <Button type="secondary" href="https://github.com/talisraeli">
-        <>
-          <img className="filter" src={githubIcon} alt="GitHub Icon" />
-          Explore more projects
-        </>
-      </Button>
+      <div data-aos="zoom-in">
+        <Button type="secondary" href="https://github.com/talisraeli">
+          <>
+            <img className="filter" src={githubIcon} alt="GitHub Icon" />
+            Explore more projects
+          </>
+        </Button>
+      </div>
     </section>
   );
 }
