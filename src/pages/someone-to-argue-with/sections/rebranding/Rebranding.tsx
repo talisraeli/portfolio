@@ -11,7 +11,7 @@ export default function Rebranding() {
       <div className={`wrapper-l ${style.content}`}>
         <h2>Rebranding</h2>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             At the beginning of 2023, the site was released in a new and
             expanded version as part of a collaboration between me and{" "}
             <a
@@ -28,7 +28,7 @@ export default function Rebranding() {
             nickname, gender, profile picture and identify himself according to
             a preferred topic group: political, sports or religious.
           </p>
-          <p>
+          <p data-aos="fade-in">
             The current version is developed by me (CEO, Research & Development)
             and Jonathan Rashi (Partner, Research & Design).
           </p>

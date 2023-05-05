@@ -9,7 +9,7 @@ interface FigureProps {
 
 export default function Figure(props: FigureProps) {
   return (
-    <div className="wrapper-m">
+    <div className="wrapper-m" data-aos="zoom-in">
       <figure
         className={`${style.figure}${
           props.noRoundedCorners ? ` ${style.noRoundedCorners}` : ""

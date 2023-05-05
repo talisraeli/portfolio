@@ -11,11 +11,15 @@ interface ArticleCardProps {
 
 export default function ArticleCard(props: ArticleCardProps) {
   return (
-    <div className={style.card}>
+    <div className={style.card} data-aos="zoom-in" data-aos-delay="100">
       <div className={`wrapper-m ${style.content}`}>
         <div className="text-section">{props.children}</div>
         <a href={props.sourceHref} target="_blank" rel="noopener noreferrer">
-          <img src={props.sourceImage} alt={props.sourceName} style={{height: props.imageSize}} />
+          <img
+            src={props.sourceImage}
+            alt={props.sourceName}
+            style={{ height: props.imageSize }}
+          />
         </a>
       </div>
     </div>

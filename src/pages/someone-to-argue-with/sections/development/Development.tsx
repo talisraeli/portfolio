@@ -11,7 +11,7 @@ export default function Development() {
       <div className={`wrapper-l ${style.content}`}>
         <h2>Development</h2>
         <div className="text-section">
-          <p>
+          <p data-aos="fade-in">
             Before starting the development of the application, I was planning
             the creative, functional, structural and architectural patterns of
             it. I explored the design and function of the original website
@@ -19,7 +19,7 @@ export default function Development() {
             thought make it better and match the modern technologies and clients
             of 2022.
           </p>
-          <p>
+          <p data-aos="fade-in">
             I chose to develop the application as a{" "}
             <a
               href="https://en.wikipedia.org/wiki/Progressive_web_app"
@@ -50,7 +50,7 @@ export default function Development() {
             </a>{" "}
             to always keep packages up-to-date.
           </p>
-          <p>
+          <p data-aos="fade-in">
             In order to start the development, I designed the look of the
             application through{" "}
             <a
@@ -167,7 +167,10 @@ export default function Development() {
             .
           </p>
         </div>
-        <Figure caption="PWA Allows cross-platform development with a single code base" noRoundedCorners>
+        <Figure
+          caption="PWA Allows cross-platform development with a single code base"
+          noRoundedCorners
+        >
           <picture>
             <source srcSet={avif} type="image/avif" />
             <source srcSet={webP} type="image/webp" />

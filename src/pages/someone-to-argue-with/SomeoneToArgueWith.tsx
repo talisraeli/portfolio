@@ -21,9 +21,17 @@ export default function SomeoneToArgueWith() {
       <Rebranding />
       <Development />
       <FeaturedArticles />
-      <section className={style.buttons}>
-        <Button type="primary" href="/" sameWindow><>Back to home page</></Button>
-        <Button type="secondary" href="https://mishu.im"><>Visit website</></Button>
+      <section
+        className={style.buttons}
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <Button type="primary" href="/" sameWindow>
+          <>Back to home page</>
+        </Button>
+        <Button type="secondary" href="https://mishu.im">
+          <>Visit website</>
+        </Button>
       </section>
     </div>
   );
