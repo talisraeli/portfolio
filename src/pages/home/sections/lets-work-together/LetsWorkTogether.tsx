@@ -11,7 +11,11 @@ export default function LetsWorkTogether() {
       <ScrollText />
       <div className={style.dashedLine}></div>
       <div className={style.cardContainer}>
-        <div className={`wrapper-s ${style.card}`}>
+        <div
+          className={`wrapper-s ${style.card}`}
+          data-aos="zoom-in-down"
+          data-aos-delay="50"
+        >
           <picture>
             <source srcSet={avatarAvif} type="image/avif" />
             <source srcSet={avatarWebP} type="image/webP" />
