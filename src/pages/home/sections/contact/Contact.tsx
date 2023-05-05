@@ -88,17 +88,17 @@ export default function Contact() {
             />
             <SocialLink
               name="GitHub"
-              href="https://github.com/KeshetBehanan"
+              href="https://github.com/talisraeli"
               src={githubIcon}
             />
             <SocialLink
               name="LinkedIn"
-              href="https://www.linkedin.com/in/keshetbehanan"
+              href="https://www.linkedin.com/in/talisraeli"
               src={linkedinIcon}
             />
             <SocialLink
               name="itch.io"
-              href="https://keshetbehanan.itch.io/"
+              href="https://talisraeli.itch.io/"
               src={itchIoIcon}
             />
             <SocialLink

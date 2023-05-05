@@ -83,9 +83,9 @@ export default function FeaturedProjects() {
           </picture>
         }
         primaryButtonLink="/game-jams"
-        seconderyButtonLink="https://keshetbehanan.itch.io/"
+        seconderyButtonLink="https://talisraeli.itch.io/"
       />
-      <Button type="secondary" href="https://github.com/KeshetBehanan">
+      <Button type="secondary" href="https://github.com/talisraeli">
         <>
           <img className="filter" src={githubIcon} alt="GitHub Icon" />
           Explore more projects
