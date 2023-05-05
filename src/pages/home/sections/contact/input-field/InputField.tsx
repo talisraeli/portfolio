@@ -21,7 +21,7 @@ export default function InputField(props: InputFieldProps) {
   };
 
   return (
-    <div className={style.field}>
+    <div className={style.field} data-aos="zoom-in">
       <label htmlFor={props.nameInCode}>{props.name}</label>
       {props.type === "textarea" ? (
         <textarea

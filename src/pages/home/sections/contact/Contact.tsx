@@ -66,16 +66,18 @@ export default function Contact() {
     <section id="contact" className={style.contact}>
       <h2>Contact</h2>
       <div className="wrapper-l">
-        <p>
-          Send me a message! Got a question or proposal, or just want to say
-          hello? Go ahead.
-        </p>
-        <p>
-          Furthermore, I invite you to connect with me via my social media
-          links.
-        </p>
+        <div data-aos="fade-in">
+          <p>
+            Send me a message! Got a question or proposal, or just want to say
+            hello? Go ahead.
+          </p>
+          <p>
+            Furthermore, I invite you to connect with me via my social media
+            links.
+          </p>
+        </div>
         <div className="wrapper-m">
-          <div className={style.links}>
+          <div className={style.links} data-aos="fade-in">
             <SocialLink
               name="Email"
               href="mailto:contact@talisrae.li"
@@ -145,7 +147,7 @@ export default function Contact() {
                 onTextareaChange={(e) => setContent(e.currentTarget.value)}
               />
             </div>
-            <div className={style.buttonContainer}>
+            <div className={style.buttonContainer} data-aos="zoom-in">
               <Button type="secondary">
                 <>Submit message</>
               </Button>
