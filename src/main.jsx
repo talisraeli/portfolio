@@ -11,6 +11,9 @@ import Footer from "./footer/Footer";
 import { Router } from "preact-router";
 import "./style.sass";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Main = () => (
   <>
     <GrainFilter />
@@ -28,3 +31,5 @@ const Main = () => (
 );
 
 render(<Main />, document.getElementById("app"));
+
+AOS.init();
