@@ -1,17 +1,26 @@
+import { useState } from "preact/hooks";
 import style from "./NavigationBar.module.sass";
 import { Fragment } from "preact";
 import Router from "preact-router";
 import Logo from "./logo/Logo";
 import BackToHomePage from "./back-to-home-page/BackToHomePage";
+import menuIcon from "./menu.svg";
 
 export default function NavigationBar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleOpen = () => setIsOpen(!isOpen);
+
   return (
     <div className={style.navigationBar}>
-      <nav className="wrapper">
+      <nav className={`wrapper${isOpen ? ` ${style.open}` : ""}`}>
         <Router>
           <Fragment path="/">
-            <Logo />
-            <ul className={style.sectionLinks}>
+            <div className={style.mobileNav}>
+              <Logo />
+              <img src={menuIcon} alt="Menu" onClick={toggleOpen} />
+            </div>
+            <ul className={style.sectionLinks} onClick={toggleOpen}>
               <li>
                 <a href="#featured-projects">Featured Projects</a>
               </li>
@@ -28,8 +37,11 @@ export default function NavigationBar() {
           </Fragment>
 
           <Fragment path="/someone-to-argue-with">
-            <BackToHomePage />
-            <ul className={style.sectionLinks}>
+            <div className={style.mobileNav}>
+              <BackToHomePage />
+              <img src={menuIcon} alt="Menu" onClick={toggleOpen} />
+            </div>
+            <ul className={style.sectionLinks} onClick={toggleOpen}>
               <li>
                 <a href="#background">Background</a>
               </li>
@@ -46,8 +58,11 @@ export default function NavigationBar() {
           </Fragment>
 
           <Fragment path="/search-engine">
-            <BackToHomePage />
-            <ul className={style.sectionLinks}>
+            <div className={style.mobileNav}>
+              <BackToHomePage />
+              <img src={menuIcon} alt="Menu" onClick={toggleOpen} />
+            </div>
+            <ul className={style.sectionLinks} onClick={toggleOpen}>
               <li>
                 <a href="#background">Background</a>
               </li>
@@ -61,8 +76,11 @@ export default function NavigationBar() {
           </Fragment>
 
           <Fragment path="/game-jams">
-            <BackToHomePage />
-            <ul className={style.sectionLinks}>
+            <div className={style.mobileNav}>
+              <BackToHomePage />
+              <img src={menuIcon} alt="Menu" onClick={toggleOpen} />
+            </div>
+            <ul className={style.sectionLinks} onClick={toggleOpen}>
               <li>
                 <a href="#who-z-for-dinner">Who Z For Dinner</a>
               </li>

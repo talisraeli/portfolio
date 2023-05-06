@@ -11,10 +11,48 @@
     background: transparentize($dark-blue, 0.5)
     backdrop-filter: blur(1rem)
 
+    @media screen and ( max-width: $screen-mobile-l )
+        height: auto
+        padding: 0.5rem 0
+
     nav
         height: 100%
         display: flex
         align-items: center
+
+        @media screen and ( max-width: $screen-mobile-l )
+            flex-direction: column
+            align-items: flex-start
+            gap: 0
+            
+            &.open .mobile-nav img
+                transform: rotate(90deg)
+
+            &:not(.open)
+                .section-links
+                    font-size: 0
+                    line-height: 0
+                    gap: 0
+                    padding: 0
+
+        .mobile-nav
+            @include centered-flex
+            flex-direction: row
+            justify-content: space-between
+
+            @media screen and ( max-width: $screen-mobile-l )
+                width: 100%
+
+            img
+                height: 2rem
+                display: none
+                cursor: pointer
+                padding: 0.25em
+                margin: -0.25em
+                transition: transform 0.3s ease-in-out
+
+                @media screen and ( max-width: $screen-mobile-l )
+                    display: block
 
         .section-links
             margin: 0
@@ -25,6 +63,13 @@
             list-style: none
             gap: 2rem
             font-family: $font-header
+
+            @media screen and ( max-width: $screen-mobile-l )
+                flex-direction: column
+                align-items: flex-start
+                gap: 1rem
+                padding: 1rem 0
+                transition: all 0.3s ease-in-out
 
             a
                 color: $off-white
