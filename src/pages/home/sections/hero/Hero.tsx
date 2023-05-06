@@ -7,7 +7,9 @@ export default function Hero() {
       <div className={`wrapper-l ${style.heroContent}`}>
         <h1>
           <span className="colored-hero">Need a Next Level</span>
-          <span className="colored-hero">Full-stack Developer?</span>
+          <br />
+          <span className="colored-hero">Full-stack</span>{" "}
+          <span className="colored-hero">Developer?</span>
         </h1>
         <p>
           I build and design beautiful software and web applications your
