@@ -11,7 +11,8 @@ export default function Hero() {
     <section className={style.hero}>
       <div className={`wrapper-l ${style.heroContent}`}>
         <h1>
-          <span className="colored-hero">Someone to Argue With</span>
+          <span className="colored-hero">Someone to</span>{" "}
+          <span className="colored-hero">Argue With</span>
         </h1>
         <Figure>
           <picture>
