@@ -1,4 +1,6 @@
 import style from "./AboutMe.module.sass";
+import { useState, useEffect } from "preact/hooks";
+import AOS from "aos";
 
 import locationIcon from "./images/location.svg";
 import languageIcon from "./images/language.svg";
@@ -10,65 +12,83 @@ import meWebP from "./images/me/me.webp";
 import meJpg from "./images/me/me.jpg";
 
 export default function AboutMe() {
+  const [readMore, setReadMore] = useState(false);
+
+  useEffect(() => {
+    AOS.refresh();
+  }, [readMore]);
+
   return (
     <section id="about-me" className={style.aboutMe}>
       <h2>About Me</h2>
       <div className={`wrapper ${style.grid}`}>
-        <article>
+        <article className={readMore ? style.readMore : ""}>
           <div className={style.line}></div>
           <div className="text-section">
             <p data-aos="fade-in">
-              Since childhood I've been in love with computers and been playing
-              video games. I wanted to create my own video games, so I
-              self-taught programing and game design with{" "}
-              <a
-                href="https://unity.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Unity
-              </a>{" "}
-              game engine via{" "}
-              <a
-                href="https://www.youtube.com/watch?v=g5QFW12utdU&list=PLPV2KyIb3jR4u6zeBY77WPj0KuFdmv84g"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                YouTube
-              </a>{" "}
-              tutorials and documentations. Then, I participated in game jams
-              and collaborating with people all over the world.
+              From a young age, I was captivated by computers and video games.
+              My interest in video game development drove me to teach myself
+              programming and game design using Unity and participate in game
+              jams, where I collaborated with developers from all over the
+              world. These experiences helped me develop my programming skills
+              and expand my knowledge.
             </p>
             <p data-aos="fade-in">
-              Programing attracted me surpassingly, and I was expanding my
-              knowledge by self-teaching software, database, network and web
-              development. When I got into high-school, I joined computer
-              science and physics classes. Additionally, I joined a software
-              development program for teenagers at{" "}
-              <a
-                href="https://www.weizmann.ac.il/pages/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Weizmann Institute of Science
-              </a>
-              . I ended high-school with a 100 grade in computer science and
-              software engineering.
+              As I grew older, I continued to teach myself and explore various
+              programming technologies and skills, including software, database,
+              network, and web development. I joined computer science and
+              physics classes in high school and even attended a software
+              development program for teenagers at the Weizmann Institute of
+              Science, where I excelled and received a perfect 100 grade in
+              computer science and software engineering.
             </p>
             <p data-aos="fade-in">
-              I was serving in the Combat Intelligence Corps in the IDF as a
-              combat intelligence soldier with a specialization in drone
-              operation. I was participating in the "Guardian of the Walls" and
-              "Breaking Dawn" operations. In the last period of my military
-              service, I was accepted to the "Shchakim - AAM" course in Unit
-              8200, but I decided to quit the program.
+              In the IDF, I served as a combat intelligence collection soldier
+              and operated drones. This allowed me to develop teamwork,
+              leadership, and communication skills, as well as the ability to
+              operate and maintain advanced military technology. I was part of
+              significant military operations such as "Guardian of the Walls"
+              and "Breaking Dawn."
             </p>
             <p data-aos="fade-in">
-              Among other things, I love to shoot portraits and street
-              photography, watch movies, play video games, and go to
-              restaurants.
+              While serving in the IDF, I was also accepted into Unit 8200's
+              prestigious and selective "Shchakim - AAM" course. However, after
+              much thought, I decided to pursue my passion for software
+              development and left the program.
+            </p>
+            <p data-aos="fade-in">
+              Regarding programming technologies and skills, I am proficient in
+              C# / .NET Core, React, SignalR, Entity Framework Core, SQL, HTML,
+              CSS / SASS, and JavaScript / TypeScript. I am also familiar with
+              cloud computing platforms such as AWS and Azure, as well as
+              development tools such as Visual Studio, VS Code, and Git.
+            </p>
+            <p data-aos="fade-in">
+              Over the years, I have honed my analytical and problem-solving
+              skills, gained experience in technical evaluations and solution
+              design, and developed a proactive and results-driven mindset. My
+              attention to detail and passion for programming have allowed me to
+              design high-performance applications and solutions to meet
+              business needs.
+            </p>
+            <p data-aos="fade-in">
+              I am always eager to expand my knowledge of new programming
+              technologies and skills, and I am committed to continuous
+              improvement. In my free time, I enjoy shooting portraits and
+              street photography, watching movies, playing video games, and
+              going to restaurants.
+            </p>
+            <p data-aos="fade-in">
+              In summary, my personal and military experiences have instilled in
+              me essential skills and qualities that are valuable in my
+              professional life. I am a motivated, dedicated, and
+              results-oriented individual who is always striving to learn and
+              grow.
             </p>
           </div>
+          <a className={style.readMore} onClick={() => setReadMore(!readMore)}>
+            {readMore ? "Read less" : "Read more"}
+          </a>
         </article>
         <aside>
           <picture>
