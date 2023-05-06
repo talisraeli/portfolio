@@ -16,6 +16,8 @@
         gap: 0rem 1rem
         padding: 3rem 0
         flex-wrap: wrap
+        @media screen and ( max-width: $screen-mobile-l )
+            gap: 0rem 2rem
 
     form, .column, .row
         @include centered-flex
@@ -27,7 +29,7 @@
 
         :global(#email)
             text-transform: lowercase
-            
+
         .column, .row
             padding-right: 2rem
 

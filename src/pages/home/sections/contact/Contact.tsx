@@ -79,44 +79,44 @@ export default function Contact() {
             links.
           </p>
         </div>
+        <div className={style.links} data-aos="fade-in">
+          <SocialLink
+            name="Email"
+            href="mailto:contact@talisrae.li"
+            src={atIcon}
+          />
+          <SocialLink
+            name="WhatsApp"
+            href="https://wa.me/972532841514"
+            src={whatsappIcon}
+          />
+          <SocialLink
+            name="GitHub"
+            href="https://github.com/talisraeli"
+            src={githubIcon}
+          />
+          <SocialLink
+            name="LinkedIn"
+            href="https://www.linkedin.com/in/talisraeli"
+            src={linkedinIcon}
+          />
+          <SocialLink
+            name="itch.io"
+            href="https://talisraeli.itch.io/"
+            src={itchIoIcon}
+          />
+          <SocialLink
+            name="Discord"
+            href="https://discord.com/users/160492252832071680"
+            src={discordIcon}
+          />
+          <SocialLink
+            name="Twitter"
+            href="https://twitter.com/KeshetBehanan"
+            src={twitterIcon}
+          />
+        </div>
         <div className="wrapper-m">
-          <div className={style.links} data-aos="fade-in">
-            <SocialLink
-              name="Email"
-              href="mailto:contact@talisrae.li"
-              src={atIcon}
-            />
-            <SocialLink
-              name="WhatsApp"
-              href="https://wa.me/972532841514"
-              src={whatsappIcon}
-            />
-            <SocialLink
-              name="GitHub"
-              href="https://github.com/talisraeli"
-              src={githubIcon}
-            />
-            <SocialLink
-              name="LinkedIn"
-              href="https://www.linkedin.com/in/talisraeli"
-              src={linkedinIcon}
-            />
-            <SocialLink
-              name="itch.io"
-              href="https://talisraeli.itch.io/"
-              src={itchIoIcon}
-            />
-            <SocialLink
-              name="Discord"
-              href="https://discord.com/users/160492252832071680"
-              src={discordIcon}
-            />
-            <SocialLink
-              name="Twitter"
-              href="https://twitter.com/KeshetBehanan"
-              src={twitterIcon}
-            />
-          </div>
           <form onSubmit={onSubmit} method="post">
             <div className={style.row}>
               <InputField
