@@ -22,6 +22,12 @@
         align-items: stretch
         gap: 1rem
 
+        :global(#name)
+            text-transform: capitalize
+
+        :global(#email)
+            text-transform: lowercase
+            
         .column, .row
             padding-right: 2rem
 
@@ -29,8 +35,10 @@
             flex-direction: row
             justify-content: space-between
             gap: 1rem 4rem
+
             @media screen and ( max-width: $screen-mobile-l )
                 flex-direction: column
+
 
         .column
             padding-right: 2rem

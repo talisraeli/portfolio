@@ -33,8 +33,11 @@ export default function Contact() {
       let res = await fetch("https://api.talisrae.li/api/contact-me", {
         method: "POST",
         body: JSON.stringify({
-          name: name,
-          email: email,
+          name: name
+            .split(" ")
+            .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+            .join(" "),
+          email: email.toLowerCase(),
           subject: subject,
           content: content,
         }),
