@@ -6,7 +6,8 @@ export default function Hero() {
     <section className={style.hero}>
       <div className={`wrapper-l ${style.heroContent}`}>
         <h1>
-          <span className="colored-hero">Need a Next Level</span>
+          <span className="colored-hero">Need a</span>{" "}
+          <span className="colored-hero">Next Level</span>
           <br />
           <span className="colored-hero">Full-stack</span>{" "}
           <span className="colored-hero">Developer?</span>
