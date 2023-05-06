@@ -32,4 +32,4 @@ const Main = () => (
 
 render(<Main />, document.getElementById("app"));
 
-AOS.init({ disable: "mobile" });
+AOS.init();
