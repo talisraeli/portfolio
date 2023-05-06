@@ -13,7 +13,7 @@ export default function AboutMe() {
   return (
     <section id="about-me" className={style.aboutMe}>
       <h2>About Me</h2>
-      <div className={style.grid}>
+      <div className={`wrapper ${style.grid}`}>
         <article>
           <div className={style.line}></div>
           <div className="text-section">

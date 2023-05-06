@@ -3,11 +3,15 @@
 
 html
     scroll-behavior: smooth
+    font-size: 24px
+    @media screen and ( max-width: $screen-4k )
+        font-size: 16px
+    @media screen and ( max-width: $screen-mobile-m )
+        font-size: 14px
 
 body
     margin: 0
     background: $dark-blue
-    font-size: 16px
     line-height: 2
     font-family: $font-paragraph
     color: $off-white
@@ -21,6 +25,11 @@ h1
     font-weight: normal
     font-size: 4rem
     line-height: normal
+
+    @media screen and ( max-width: $screen-tablet )
+        font-size: 3rem
+    @media screen and ( max-width: $screen-mobile-l )
+        font-size: 2.5rem
 
     @function shadow($size)
         @return drop-shadow($size $size 0px #7B2600)
@@ -49,10 +58,16 @@ h2
     text-transform: uppercase
     letter-spacing: 0.25em
 
+    @media screen and ( max-width: $screen-mobile-l )
+        font-size: 2rem
+
 h3
     font-family: $font-paragraph
     font-size: 2rem
     font-weight: 500
+
+    @media screen and ( max-width: $screen-mobile-l )
+        font-size: 1.5rem
 
 h4
     @extend h3
@@ -92,7 +107,12 @@ a
 
 @mixin wrapper-calculation($size)
     $wrapper-padding: calc((100% - $size) / 2)
-    padding: 0 clamp(2.5vw, $wrapper-padding, $wrapper-padding)
+    padding: 0 clamp(5vw, $wrapper-padding, $wrapper-padding)
+    @media screen and ( min-width: $screen-4k )
+        $wrapper-padding: calc((100% - $size * 1.5) / 2)
+        padding: 0 clamp(5vw, $wrapper-padding, $wrapper-padding)
+    @media screen and ( max-width: $screen-mobile-l )
+                grid-column: 1 / 13
 
 .wrapper
     @include wrapper-calculation($size: $size-wrapper)

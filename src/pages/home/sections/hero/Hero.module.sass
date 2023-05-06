@@ -7,6 +7,11 @@
 
     .hero-content
         @include centered-flex
+
+        @media screen and ( max-width: $screen-mobile-l )
+            gap: 2rem
         
         p
             font-size: 1.25rem
+            @media screen and ( max-width: $screen-mobile-l )
+                font-size: 1rem

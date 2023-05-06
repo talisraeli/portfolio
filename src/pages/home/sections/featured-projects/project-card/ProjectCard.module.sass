@@ -7,18 +7,30 @@
     padding-bottom: 4.5rem
     text-align: left
 
+    @media screen and ( max-width: $screen-mobile-l )
+        padding-top: 2rem
+        padding-bottom: 3rem
+
     .grid
         @include layout-grid
-        
+
         .image
             height: 750px
             aspect-ratio: 16 / 9
             grid-column: 1 / 5
             position: absolute
-            left: calc(-100% + 24rem)
-            transform: rotate(-3deg)
-            top: -3rem
+            transform: rotate(-3deg) scale(1.5)
             pointer-events: none
+            top: 0rem
+            left: calc(-100% + 24rem)
+            transform-origin: top left
+
+            @media screen and ( max-width: $screen-laptop-l )
+                transform: rotate(-3deg)
+
+            @media screen and ( max-width: $screen-tablet )
+                display: none
+                
 
             *
                 @include rounded-corners
@@ -30,6 +42,9 @@
             grid-column: 6 / 13
             width: 100%
 
+            @media screen and ( max-width: $screen-tablet )
+                grid-column: 2 / 12
+
             p
                 padding-bottom: 1rem
 
@@ -38,14 +53,22 @@
             flex-direction: row
             gap: 2rem
             white-space: nowrap
-        
+
+            @media screen and ( max-width: $screen-mobile-l )
+                flex-wrap: wrap
+
     &:nth-of-type(2n)
         .image
             grid-column: 9 / 13
             left: auto
             right: calc(-100% - 12rem)
-            transform: rotate(3deg)
+            transform: rotate(3deg) scale(1.5)
+            transform-origin: top right
 
+            @media screen and ( max-width: $screen-laptop-l )
+                transform: rotate(3deg)
         .content
             grid-column: 1 / 8
-        
+
+            @media screen and ( max-width: $screen-tablet )
+                grid-column: 2 / 12

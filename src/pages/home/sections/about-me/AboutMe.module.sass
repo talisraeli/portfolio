@@ -4,12 +4,17 @@
     .grid
         @include layout-grid
         text-align: left
+        row-gap: 4rem
 
         article
             grid-column: 1 / 8
             display: flex
             flex-direction: row
             gap: 1rem
+
+            @media screen and ( max-width: $screen-tablet )
+                grid-column: 1 / 13
+                grid-row: 2 / 3
 
             .line
                 background: repeating-linear-gradient(to bottom, $off-white, $off-white 0.75rem, transparent 0.75rem, transparent 1.5rem)
@@ -19,9 +24,20 @@
         aside
             grid-column: 9 / 13
 
+            @media screen and ( max-width: $screen-tablet )
+                grid-column: 1 / 13
+                grid-row: 1 / 2
+
             > picture img
                 @include rounded-corners
                 width: 100%
+
+                @media screen and ( max-width: $screen-tablet )
+                    height: 10rem
+                    aspect-ratio: 1 / 1
+                    width: auto
+                    object-fit: cover
+                    object-position: bottom
 
             h3
                 line-height: 1

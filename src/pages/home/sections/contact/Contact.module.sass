@@ -1,27 +1,40 @@
 @import "../../../../variables"
 
-.links
-    width: 100%
+.contact
     @include centered-flex
-    flex-direction: row
-    justify-content: space-between
-    gap: 0
-    padding: 3rem 0
+    gap: 2rem
 
-form, .column
-    @include centered-flex
-    align-items: stretch
-    gap: 1rem
+    :global(.wrapper-m)
+        @media screen and ( max-width: $screen-mobile-l )
+            padding: 0
 
-    .row
+    .links
+        width: 100%
         @include centered-flex
         flex-direction: row
+        justify-content: space-evenly
+        gap: 0rem 1rem
+        padding: 3rem 0
+        flex-wrap: wrap
 
-    .column
-        padding-right: 1rem
-
-    .button-container
+    form, .column, .row
         @include centered-flex
-        padding: 1.5rem 0
+        align-items: stretch
+        gap: 1rem
 
-        
+        .column, .row
+            padding-right: 2rem
+
+        .row
+            flex-direction: row
+            justify-content: space-between
+            gap: 1rem 4rem
+            @media screen and ( max-width: $screen-mobile-l )
+                flex-direction: column
+
+        .column
+            padding-right: 2rem
+
+        .button-container
+            @include centered-flex
+            padding: 1.5rem 0

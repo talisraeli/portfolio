@@ -16,6 +16,9 @@ button
     font-weight: 500
     transition: all 0.2s ease-in-out
 
+    @media screen and ( max-width: $screen-tablet )
+        padding: 1em 2em
+
     &.jumping
         animation: 8s jumping infinite
 
@@ -45,6 +48,9 @@ button
         box-shadow: inset 25rem 0 0 0 white
         padding: 1.25em 3.25em
 
+        @media screen and ( max-width: $screen-tablet )
+            padding: 1em 2.75em
+
         span
             left: -0.75em
 
@@ -53,10 +59,17 @@ button
             opacity: 1
             right: 2.5rem
 
+            @media screen and ( max-width: $screen-tablet )
+                height: 1.25em
+                right: 1.75rem
+
     &.hero
         background: $purple
         color: white
         font-size: 1.25rem
+
+        @media screen and ( max-width: $screen-mobile-l )
+            font-size: 1rem
 
         &::before
             content: ""
