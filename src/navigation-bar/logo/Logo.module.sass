@@ -1,3 +1,5 @@
+@import "../../variables"
+
 .logo
     color: white
     font-weight: bold
@@ -16,15 +18,20 @@
 
     .israe, .li
         position: relative
-    
+
     .israe
         animation-name: move-israe
-    
+
     .li
         animation-name: move-li
 
     .dot
         animation-name: fade-dot
+
+    @media screen and ( max-width: $screen-mobile-l )
+        .israe, .dot, .li
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
 
 @keyframes move-israe
     0%, 50%

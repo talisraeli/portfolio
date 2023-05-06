@@ -9,6 +9,10 @@
         animation: 1s letter-jumping infinite alternate
         color: darken($off-white, 50%)
 
+        @media screen and ( max-width: $screen-mobile-l )
+            animation-iteration-count: 1
+            animation-fill-mode: forwards
+
         @for $i from 1 through 6
             &:nth-child(#{$i})
                 animation-delay: $i * 166ms * 2
