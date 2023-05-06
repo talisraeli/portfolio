@@ -87,7 +87,7 @@ export default function AdBlockDoesntWork() {
         </div>
         <Figure caption="Ads pop up while you try to watch an online video">
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={jpg}

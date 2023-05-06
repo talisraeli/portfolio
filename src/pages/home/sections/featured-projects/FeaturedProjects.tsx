@@ -28,7 +28,7 @@ export default function FeaturedProjects() {
         seconderyButtonName="Visit website"
         image={
           <picture>
-            <source srcSet={stawAvif} type="image/avif" />
+            <source srcSet={stawAvif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={stawWebP} type="image/webp" />
             <img
               src={stawJpg}
@@ -51,7 +51,7 @@ export default function FeaturedProjects() {
         fadeLeft
         image={
           <picture>
-            <source srcSet={seAvif} type="image/avif" />
+            <source srcSet={seAvif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={seWebP} type="image/webp" />
             <img
               src={seJpg}
@@ -72,7 +72,7 @@ export default function FeaturedProjects() {
         seconderyButtonName="Play my games"
         image={
           <picture>
-            <source srcSet={gjAvif} type="image/avif" />
+            <source srcSet={gjAvif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={gjWebP} type="image/webp" />
             <img
               src={gjJpg}

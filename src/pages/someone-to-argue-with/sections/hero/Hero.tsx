@@ -16,7 +16,7 @@ export default function Hero() {
         </h1>
         <Figure>
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={png}

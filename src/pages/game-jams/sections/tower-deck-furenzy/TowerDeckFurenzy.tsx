@@ -108,7 +108,7 @@ export default function TowerDeckFurenzy() {
         </div>
         <Figure caption="The player uses the cards in its hand in order to defeat the angry animals">
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={jpg}

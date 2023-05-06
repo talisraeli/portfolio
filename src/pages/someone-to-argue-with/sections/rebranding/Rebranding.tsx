@@ -35,7 +35,7 @@ export default function Rebranding() {
         </div>
         <Figure caption="The current home page of the website">
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={png}

@@ -17,7 +17,7 @@ export default function LetsWorkTogether() {
           data-aos-delay="50"
         >
           <picture>
-            <source srcSet={avatarAvif} type="image/avif" />
+            <source srcSet={avatarAvif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={avatarWebP} type="image/webP" />
             <img
               src={avatarJpg}

@@ -130,7 +130,7 @@ export default function Development() {
           noRoundedCorners
         >
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={png}

@@ -92,7 +92,7 @@ export default function AboutMe() {
         </article>
         <aside>
           <picture>
-            <source srcset={meAvif} type="image/avif" />
+            <source srcset={meAvif} media="(min-width: 1024px)" type="image/avif" />
             <source srcset={meWebP} type="image/webp" />
             <img
               src={meJpg}

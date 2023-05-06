@@ -61,7 +61,7 @@ export default function ProjectDesign() {
         </div>
         <Figure caption="A use-case diagram I designed for the plan of the project">
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={png}

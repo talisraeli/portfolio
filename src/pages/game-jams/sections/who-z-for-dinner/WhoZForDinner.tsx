@@ -83,7 +83,7 @@ export default function WhoZForDinner() {
         </div>
         <Figure caption="The player shoots the zombies to defend itself and to don't fall down">
           <picture>
-            <source srcSet={avif} type="image/avif" />
+            <source srcSet={avif} media="(min-width: 1024px)" type="image/avif" />
             <source srcSet={webP} type="image/webp" />
             <img
               src={jpg}
