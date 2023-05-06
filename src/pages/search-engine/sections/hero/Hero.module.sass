@@ -6,6 +6,9 @@ section.hero
     justify-content: center
     padding: 0 0 3rem 0
 
+    @media screen and ( max-width: $screen-mobile-l )
+        padding: 1rem 0 3rem 0
+
     .hero-content
         @include centered-flex
         gap: 2rem
@@ -14,3 +17,6 @@ section.hero
             @include centered-flex
             flex-direction: row
             gap: 2rem
+
+            @media screen and ( max-width: $screen-mobile-l )
+                gap: 1rem
