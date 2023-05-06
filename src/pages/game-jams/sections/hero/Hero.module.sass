@@ -6,9 +6,18 @@ section.hero
     justify-content: center
     padding: 0 0 3rem 0
 
+    @media screen and ( max-width: $screen-tablet )
+        padding: 1rem 0 3rem 0
+
     .hero-content
         @include centered-flex
         gap: 2rem
+
+        @media screen and ( max-width: $screen-tablet )
+            gap: 1rem
+
+            :global(.text-section)
+                gap: 1rem
 
         .buttons
             @include centered-flex
