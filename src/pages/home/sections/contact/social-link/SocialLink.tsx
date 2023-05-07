@@ -15,7 +15,12 @@ export default function SocialLink(props: SocialLinkProps) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={props.src} alt={`${props.name} Icon`} />
+      <img
+        src={props.src}
+        alt={`${props.name} Icon`}
+        decoding="async"
+        loading="lazy"
+      />
     </a>
   );
 }
