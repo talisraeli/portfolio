@@ -69,7 +69,7 @@ export default function Development() {
               Porter Stemmer
             </a>{" "}
             library which reduces the keywords or chops them into their root
-            forms (e.g. eating becomes eat). For the design I used pure{" "}
+            forms (e.g., eating becomes eat). For the design I used pure{" "}
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS"
               target="_blank"

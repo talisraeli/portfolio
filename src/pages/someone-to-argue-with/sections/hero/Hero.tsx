@@ -37,10 +37,10 @@ export default function Hero() {
             "Chatroulette"
           </a>
           , a chat between complete strangers, and gives it a unique twist.
-          First choose the side you belong to and the system will randomly find
+          First choose the side you belong to, and the system will randomly find
           you someone from the other side to argue with. In a completely
-          anonymous conversation you can bridge the great gaps in the society or
-          deepen the divide to your pleasure.
+          anonymous conversation, you can bridge the great gaps in the society
+          or deepen the divide to your pleasure.
         </p>
         <div className={style.buttons}>
           <Button type="primary" href="#background" sameWindow>

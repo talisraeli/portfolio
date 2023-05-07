@@ -27,8 +27,8 @@ export default function AdBlockDoesntWork() {
             </a>{" "}
             was "The more you have, the worse it is". I had an idea of a
             real-life case which your AdBlock addon on your internet browser
-            doesnt work while you're trying to watch online videos on YouTube. I
-            implemented this idea into the game, and made the player close the
+            doesn't work while you're trying to watch online videos on YouTube.
+            I implemented this idea into the game, and made the player close the
             ads to earn score until the video ends.
           </p>
           <p data-aos="fade-in">

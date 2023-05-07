@@ -23,7 +23,7 @@ export default function FeaturedProjects() {
       <ProjectCard
         title="Someone to Argue With"
         description='A "Chatroulette" like app, a chat between complete strangers, 
-        and gives it a unique twist. First choose the side you belong to 
+        and gives it a unique twist. First choose the side you belong to, 
         and the system will randomly find you someone from the other side to argue with.'
         seconderyButtonName="Visit website"
         image={

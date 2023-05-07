@@ -27,7 +27,8 @@ export default function Hero() {
           </picture>
         </Figure>
         <p>
-          A text-based search engine of the web. I developed this project to
+          A text-based search engine of the web. I developed this project for
+          the{" "}
           <a
             href="https://davidson.weizmann.ac.il/en"
             target="_blank"
@@ -44,7 +45,7 @@ export default function Hero() {
             Weizmann Institute of Science
           </a>
           , as the final project to my external high-school diploma. I've done
-          all the project myself, mentored by Ph.D. Industrial Engineering
+          all the project myself, mentored by a Ph.D. Industrial Engineering
           lecturer.
         </p>
         <div className={style.buttons}>

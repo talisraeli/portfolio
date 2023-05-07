@@ -29,7 +29,7 @@ export default function Background() {
             In preparation for the Knesset (the parliament of Israel) elections
             in November 2022, the 5th election in about 3.5 years, the website
             relaunched by me in order to help those who are looking for a place
-            to vent their anger about another elections, and rage at the other
+            to vent their anger about another election, and rage on the other
             side. I renewed the design and user experience to the modern
             standard of 2022. In addition, I added new features such as viewing
             and sharing conversations after they was ended.

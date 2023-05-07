@@ -16,7 +16,7 @@ export default function Development() {
             the creative, functional, structural and architectural patterns of
             it. I explored the design and function of the original website
             created by Geva brothers, and made the changes of mine which I
-            thought make it better and match the modern technologies and clients
+            thought made it better and match the modern technologies and clients
             of 2022.
           </p>
           <p data-aos="fade-in">

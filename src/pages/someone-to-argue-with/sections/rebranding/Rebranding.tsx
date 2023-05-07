@@ -26,7 +26,7 @@ export default function Rebranding() {
             rebranding and redesign. Also, each user is given a wider range of
             choices in their self-definition. Today, the user can choose a
             nickname, gender, profile picture and identify himself according to
-            a preferred topic group: political, sports or religious.
+            a preferred topic group: politics, sports or religion.
           </p>
           <p data-aos="fade-in">
             The current version is developed by me (CEO, Research & Development)
