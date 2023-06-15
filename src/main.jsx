@@ -16,7 +16,6 @@ import "aos/dist/aos.css";
 
 const Main = () => (
   <>
-    <GrainFilter />
     <NavigationBar />
     <main className="wrapper">
       <Router>
