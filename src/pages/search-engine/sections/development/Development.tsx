@@ -1,6 +1,5 @@
 import Figure from "../../../../components/figure/Figure";
 import style from "./Development.module.sass";
-
 import avif from "./images/devices.avif";
 import webP from "./images/devices.webp";
 import png from "./images/devices.png";
