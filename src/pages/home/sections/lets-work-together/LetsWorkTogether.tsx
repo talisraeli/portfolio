@@ -14,7 +14,6 @@ export default function LetsWorkTogether() {
         <div
           className={`wrapper-s ${style.card}`}
           data-aos="zoom-in-down"
-          data-aos-delay="50"
         >
           <picture>
             <source srcSet={avatarAvif} type="image/avif" />
