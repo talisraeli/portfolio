@@ -53,10 +53,12 @@ export default function Contact() {
     e.preventDefault();
     if (name && email && subject && content) {
       resetPop();
-      fetchMessage(name, email, subject, content).then((res) => {
-        setSentSuccessfully(res);
-        setPop(true);
-      });
+      fetchMessage(name, email, subject, content)
+        .then((res) => {
+          setSentSuccessfully(res);
+          setPop(true);
+        })
+        .catch((err) => console.error(err));
       e.currentTarget.reset();
     }
   };
