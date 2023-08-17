@@ -104,23 +104,6 @@ export default function Development() {
             >
               Amazon EC2
             </a>
-            . Unlike the original deployment of the project in 2019, the current
-            live demo is hosted on{" "}
-            <a
-              href="https://azure.microsoft.com/en-us/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Azure
-            </a>
-            , on a serverless{" "}
-            <a
-              href="https://azure.microsoft.com/en-us/products/app-service/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              App Service
-            </a>
             .
           </p>
         </div>

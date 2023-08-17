@@ -23,12 +23,6 @@ export default function SearchEngine() {
         <Button type="primary" href="/" sameWindow>
           <>Back to home page</>
         </Button>
-        <Button
-          type="secondary"
-          href="https://talsearchengine.azurewebsites.net/"
-        >
-          <>Live demo</>
-        </Button>
       </section>
     </div>
   );

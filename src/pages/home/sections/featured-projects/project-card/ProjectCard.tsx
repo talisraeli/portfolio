@@ -5,10 +5,10 @@ import style from "./ProjectCard.module.sass";
 interface ProjectCardProps {
   title: string;
   description: string;
-  seconderyButtonName: string;
+  seconderyButtonName?: string;
   image: JSX.Element;
   primaryButtonLink: string;
-  seconderyButtonLink: string;
+  seconderyButtonLink?: string;
   fadeLeft?: boolean;
 }
 
@@ -32,9 +32,11 @@ export default function ProjectCard(props: ProjectCardProps) {
             >
               <>Read more</>
             </Button>
-            <Button type="secondary" href={props.seconderyButtonLink}>
-              <>{props.seconderyButtonName}</>
-            </Button>
+            {props.seconderyButtonName && (
+              <Button type="secondary" href={props.seconderyButtonLink}>
+                <>{props.seconderyButtonName}</>
+              </Button>
+            )}
           </div>
         </div>
       </div>

@@ -47,7 +47,6 @@ export default function FeaturedProjects() {
         description="A search engine of the web. Write a phrase which
         defines what you are searching for and receive the
         most relevant webpage results across the internet."
-        seconderyButtonName="Live demo"
         fadeLeft
         image={
           <picture>
@@ -63,7 +62,6 @@ export default function FeaturedProjects() {
           </picture>
         }
         primaryButtonLink="/search-engine"
-        seconderyButtonLink="https://talsearchengine.azurewebsites.net/"
       />
       <ProjectCard
         title="Game Jams"
