@@ -27,6 +27,12 @@ const Main = () => (
   </>
 );
 
-render(<Main />, document.getElementById("app"));
+const root = document.getElementById("app");
 
-AOS.init();
+if (root) {
+  render(<Main />, root);
+  AOS.init();
+}
+else {
+  throw new Error("`app` element not found.");
+}
