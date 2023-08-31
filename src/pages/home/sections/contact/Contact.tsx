@@ -9,7 +9,6 @@ import githubIcon from "./images/github.svg";
 import linkedinIcon from "./images/linkedin.svg";
 import itchIoIcon from "./images/itch-io.svg";
 import discordIcon from "./images/discord.svg";
-import twitterIcon from "./images/twitter.svg";
 import InputField from "./input-field/InputField";
 import Button from "../../../../components/button/Button";
 import { JSX } from "preact/jsx-runtime";
@@ -111,11 +110,6 @@ export default function Contact() {
             name="Discord"
             href="https://discord.com/users/160492252832071680"
             src={discordIcon}
-          />
-          <SocialLink
-            name="Twitter"
-            href="https://twitter.com/KeshetBehanan"
-            src={twitterIcon}
           />
         </div>
         <div className="wrapper-m">
